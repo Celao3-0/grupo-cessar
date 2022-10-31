@@ -39,13 +39,27 @@ module PLA (
     and (H, CurrentStateNegated[3], CurrentState[2], CurrentState[1], CurrentState[0]);
     and (I, CurrentState[3], CurrentStateNegated[2], CurrentStateNegated[1], CurrentStateNegated[0]);
     and (J, CurrentState[3], CurrentStateNegated[2], CurrentStateNegated[1], CurrentState[0]);
-    and (K, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], OpNegated[0]);
-    and (L, B, OpNegated[5], OpNegated[4], OpNegated[3], Op[2], OpNegated[1], OpNegated[0]);
-    and (M, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], OpNegated[1], OpNegated[0]);
-    and (N, C, Op[5], OpNegated[4], Op[3], OpNegated[2], Op[1], Op[0]);
-    and (O, B, Op[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
-    and (P, B, Op[5], OpNegated[4], Op[3], OpNegated[2], Op[1], Op[0]);
+    // and (K, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], OpNegated[0]);
+    // and (L, B, OpNegated[5], OpNegated[4], OpNegated[3], Op[2], OpNegated[1], OpNegated[0]);
+    // and (M, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], OpNegated[1], OpNegated[0]);
+    // and (N, C, Op[5], OpNegated[4], Op[3], OpNegated[2], Op[1], Op[0]);
+    // and (O, B, Op[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    // and (P, B, Op[5], OpNegated[4], Op[3], OpNegated[2], Op[1], Op[0]);
     and (Q, C, Op[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    
+    
+    
+    
+    and (R, B, OpNegated[5], Op[4], OpNegated[3], Op[2], Op[1], Op[0]);
+    and (S, B, Op[5], OpNegated[4], Op[3], Op[2], Op[1], Op[0]);
+    and (T, C, Op[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (U, B, Op[5], Op[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (V, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (W, C, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (X, B, Op[5], Op[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (Y, B, OpNegated[5], Op[4], OpNegated[3], Op[2], Op[1], Op[0]);
+    and (Z, B, Op[5], OpNegated[4], Op[3], Op[2], Op[1], Op[0]);
+    and (A1, C, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
 
     or (PCWrite, A, J);
     assign PCWriteCond = I;
@@ -63,8 +77,8 @@ module PLA (
     or (ALUSrcBA, C, G, I);
     or (RegWrite, E, H);
     or (RegDst, H);
-    or (NS3, K, L);
-    or (NS2, D, G, M, N);
-    or (NS1, G, M, O, P, Q);
-    or (NS0, A, G, K, N, Q);
+    or (NS3, R, S);
+    or (NS2, D, G, T, U);
+    or (NS1, G, O, V, W, X);
+    or (NS0, A, G, Q, Y, Z, A1);
 endmodule
