@@ -1,4 +1,4 @@
-module moduleName (
+module PLA (
     input [5:0] Op,
     input [3:0] CurrentState,
 
@@ -29,26 +29,26 @@ module moduleName (
     // wires verticais
     wire A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q;
 
-    and (A, CurrentStateNegated[0], CurrentStateNegated[1], CurrentStateNegated[2], CurrentStateNegated[3]);
-    and (B, CurrentStateNegated[0], CurrentStateNegated[1], CurrentStateNegated[2], CurrentState[3]);
-    and (C, CurrentStateNegated[0], CurrentStateNegated[1], CurrentState[2], CurrentStateNegated[3]);
-    and (D, CurrentStateNegated[0], CurrentStateNegated[1], CurrentState[2], CurrentState[3]);
-    and (E, CurrentStateNegated[0], CurrentState[1], CurrentStateNegated[2], CurrentStateNegated[3]);
-    and (F, CurrentStateNegated[0], CurrentState[1], CurrentStateNegated[2], CurrentState[3]);
-    and (G, CurrentStateNegated[0], CurrentState[1], CurrentState[2], CurrentStateNegated[3]);
-    and (H, CurrentState[0], CurrentStateNegated[1], CurrentStateNegated[2], CurrentStateNegated[3]);
-    and (I, CurrentState[0], CurrentStateNegated[1], CurrentStateNegated[2], CurrentStateNegated[3]);
-    and (J, CurrentState[0], CurrentStateNegated[1], CurrentStateNegated[2], CurrentStateNegated[3]);
-    and (K, B, OpNegated[0], OpNegated[1], OpNegated[2], OpNegated[3], Op[4], OpNegated[5]);
-    and (L, B, OpNegated[0], OpNegated[1], OpNegated[2], Op[3], OpNegated[4], OpNegated[5]);
-    and (M, B, OpNegated[0], OpNegated[1], OpNegated[2], OpNegated[3], OpNegated[4], OpNegated[5]);
-    and (N, C, Op[0], OpNegated[1], Op[2], OpNegated[3], Op[4], Op[5]);
-    and (O, B, Op[0], OpNegated[1], OpNegated[2], OpNegated[3], Op[4], Op[5]);
-    and (P, B, Op[0], OpNegated[1], Op[2], OpNegated[3], Op[4], Op[5]);
-    and (Q, C, Op[0], OpNegated[1], OpNegated[2], OpNegated[3], Op[4], Op[5]);
+    and (A, CurrentStateNegated[3], CurrentStateNegated[2], CurrentStateNegated[1], CurrentStateNegated[0]);
+    and (B, CurrentStateNegated[3], CurrentStateNegated[2], CurrentStateNegated[1], CurrentState[0]);
+    and (C, CurrentStateNegated[3], CurrentStateNegated[2], CurrentState[1], CurrentStateNegated[0]);
+    and (D, CurrentStateNegated[3], CurrentStateNegated[2], CurrentState[1], CurrentState[0]);
+    and (E, CurrentStateNegated[3], CurrentState[2], CurrentStateNegated[1], CurrentStateNegated[0]);
+    and (F, CurrentStateNegated[3], CurrentState[2], CurrentStateNegated[1], CurrentState[0]);
+    and (G, CurrentStateNegated[3], CurrentState[2], CurrentState[1], CurrentStateNegated[0]);
+    and (H, CurrentStateNegated[3], CurrentState[2], CurrentState[1], CurrentState[0]);
+    and (I, CurrentState[3], CurrentStateNegated[2], CurrentStateNegated[1], CurrentStateNegated[0]);
+    and (J, CurrentState[3], CurrentStateNegated[2], CurrentStateNegated[1], CurrentState[0]);
+    and (K, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], OpNegated[0]);
+    and (L, B, OpNegated[5], OpNegated[4], OpNegated[3], Op[2], OpNegated[1], OpNegated[0]);
+    and (M, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], OpNegated[1], OpNegated[0]);
+    and (N, C, Op[5], OpNegated[4], Op[3], OpNegated[2], Op[1], Op[0]);
+    and (O, B, Op[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (P, B, Op[5], OpNegated[4], Op[3], OpNegated[2], Op[1], Op[0]);
+    and (Q, C, Op[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
 
     or (PCWrite, A, J);
-    or (PCWriteCond, H);
+    assign PCWriteCond = I;
     or (IorD, D, F);
     or (MemRead, A, D);
     or (MemWrite, F);
