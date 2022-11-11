@@ -56,9 +56,9 @@ module PLA (
     and (U, B, Op[5], Op[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
     and (V, B, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
     and (W, C, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
-    and (X, B, Op[5], Op[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
+    and (Xa, B, Op[5], Op[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
     and (Y, B, OpNegated[5], Op[4], OpNegated[3], Op[2], Op[1], Op[0]);
-    and (Z, B, Op[5], OpNegated[4], Op[3], Op[2], Op[1], Op[0]);
+    and (Za, B, Op[5], OpNegated[4], Op[3], Op[2], Op[1], Op[0]);
     and (A1, C, OpNegated[5], OpNegated[4], OpNegated[3], OpNegated[2], Op[1], Op[0]);
 
     or (PCWrite, A, J);
