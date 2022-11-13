@@ -67,7 +67,7 @@ module PLA (
     or (MemRead, A, D);
     or (MemWrite, F);
     or (IRWrite, A);
-    or (MemtoReg, E);
+    assign MemtoReg = E;
     or (PCSource1, J);
     or (PCSource0, I);
     or (ALUOp1, G);

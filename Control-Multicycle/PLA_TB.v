@@ -4,7 +4,7 @@ module testbench () ;
     reg [3:0] CurrentState;
 
     wire [19:0] out;
-    PLA UUT ( .Op( Op ), .CurrentState (CurrentState),  .PCWrite(PCWrite), .PCWriteCond(PCWriteCond), .IorD(IorD), .MemRead(MemRead), .MemWrite(MemWrite), .IRWrite(IRWrite), .MemtoReg(MemtoReg), .PCSource1(PCSource1), .PCSource0(PCSource0), .ALUOp1(ALUOp1), .ALUOp0(ALUOp0), .ALUSrcB1(ALUSrcB1), .ALUSrcB0(ALUSrcB0), .ALUSrcBA(ALUSrcBA), .RegWrite(RegWrite), .RegDst(RegDst), .NS3(NS3), .NS2(NS2), .NS1(NS1), .NS0(NS0));
+    PLA UUT ( .Op(Op), .CurrentState (CurrentState),  .PCWrite(PCWrite), .PCWriteCond(PCWriteCond), .IorD(IorD), .MemRead(MemRead), .MemWrite(MemWrite), .IRWrite(IRWrite), .MemtoReg(MemtoReg), .PCSource1(PCSource1), .PCSource0(PCSource0), .ALUOp1(ALUOp1), .ALUOp0(ALUOp0), .ALUSrcB1(ALUSrcB1), .ALUSrcB0(ALUSrcB0), .ALUSrcBA(ALUSrcBA), .RegWrite(RegWrite), .RegDst(RegDst), .NS3(NS3), .NS2(NS2), .NS1(NS1), .NS0(NS0));
 
     integer i, k, errors;
     task Check ;

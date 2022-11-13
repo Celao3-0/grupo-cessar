@@ -57,27 +57,20 @@ module testbench () ;
             reset = 1'b1;
             #100
             reset = 1'b0;
-        end
+
+            errors = 0;
+            instruction = 32'b1110110000000000000000000000000;
+            #10
+            Check(20'b10010100101011000001);
 
 
-        
+            instruction = 32'b11011110000000000000000000110001;
+            #10
+            Check(20'b10010100101011000001);
 
 
-
-        initial begin
-        errors = 0;
-        instruction = 32'b1110110000000000000000000000000;
-        #10
-        Check(20'b10010100101011000001);
-
-
-        instruction = 32'b11011110000000000000000000110001;
-        #10
-        Check(20'b10010100101011000001);
-
-
-        $display (" Test ended , %2d errors ", errors );
+            $display (" Test ended , %2d errors ", errors );
    
     end
-    always #10 clock =~ clock;
+    always #10 clock = ~clock;
 endmodule
