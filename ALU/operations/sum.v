@@ -4,8 +4,8 @@ module sum (
     input [31:0] A,
     input [31:0] B,
     
-    output [31:0] result
-    output Cout;
+    output [31:0] result,
+    output Cout
 );  
 
     wire zero;
@@ -42,7 +42,7 @@ module sum (
 
     and (zero, A[0], ~A[0]);
 
-    lookAhead1b s0 (.S(result[0]),   .A(A[0]),   .B(B[0]),   zero, .Cout(C1));
+    lookAhead1b s0 (.S(result[0]),   .A(A[0]),   .B(B[0]),   .C(zero), .Cout(C1));
     lookAhead1b s1 (.S(result[1]),   .A(A[1]),   .B(B[1]),   .C(C1), .Cout(C2));
     lookAhead1b s2 (.S(result[2]),   .A(A[2]),   .B(B[2]),   .C(C2), .Cout(C3));
     lookAhead1b s3 (.S(result[3]),   .A(A[3]),   .B(B[3]),   .C(C3), .Cout(C4));

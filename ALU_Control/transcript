@@ -1,6 +1,6 @@
 # vsim -c work.testbench 
-# Start time: 22:35:12 on Nov 12,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Start time: 17:55:22 on Nov 13,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
 # //
@@ -17,3 +17,5 @@
 # //
 # Loading work.testbench(fast)
 #  Test ended ,  0 errors 
+# End time: 18:13:57 on Nov 13,2022, Elapsed time: 0:18:35
+# Errors: 0, Warnings: 0

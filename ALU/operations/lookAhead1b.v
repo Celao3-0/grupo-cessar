@@ -12,7 +12,7 @@ module lookAhead1b (
     wire noDef;
 
     xor (P, A, B);
-    xor (S, Pi, C);
+    xor (S, P, C);
 
     and (G, A, B);
     and (noDef, P, C);

@@ -4,8 +4,8 @@ module sub (
     input [31:0] A,
     input [31:0] B,
     
-    output [31:0] result
-    output Cout;
+    output [31:0] result,
+    output Cout
 );  
     wire zero;
     wire C1;
@@ -41,7 +41,7 @@ module sub (
 
     and (zero, A[0], ~A[0]);
 
-    borrowAhead1b s0 (.D(result[0]),   .A(A[0]),   .B(B[0]),   zero,   .Bout(C1));
+    borrowAhead1b s0 (.D(result[0]),   .A(A[0]),   .B(B[0]),   .C(zero),   .Bout(C1));
     borrowAhead1b s1 (.D(result[1]),   .A(A[1]),   .B(B[1]),   .C(C1), .Bout(C2));
     borrowAhead1b s2 (.D(result[2]),   .A(A[2]),   .B(B[2]),   .C(C2), .Bout(C3));
     borrowAhead1b s3 (.D(result[3]),   .A(A[3]),   .B(B[3]),   .C(C3), .Bout(C4));
