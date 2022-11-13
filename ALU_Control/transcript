@@ -1,6 +1,6 @@
 # vsim -c work.testbench 
-# Start time: 23:36:19 on Oct 16,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 22:27:48 on Nov 12,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Intel Starter FPGA Edition-64
 # //  Version 2021.2 win64 Apr 14 2021
 # //
@@ -16,4 +16,5 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading work.testbench(fast)
+# invalid command name "RUN"
 #  Test ended ,  0 errors 

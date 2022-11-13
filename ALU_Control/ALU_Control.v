@@ -1,19 +1,20 @@
 module ALU_Control (
-    input [1:0] ALUOp,
+    input ALUOp1, 
+    input ALUOp0,
     input [5:0] funct,
     output [3:0] operation
 );
     reg [3:0] op;
     always @(*)
         begin
-            case (ALUOp[1])
+            case (ALUOp1)
                 1'b0:
-                    case (ALUOp[0])
+                    case (ALUOp0)
                         1'b0: op = 4'b0010;
                         default: op = 4'b0110;
                     endcase
                 default:
-                    case (ALUOp[0])
+                    case (ALUOp0)
                         1'b1: op = 4'b0110;
                         default: 
                             case (funct[0])
