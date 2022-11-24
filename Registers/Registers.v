@@ -120,7 +120,38 @@ module Registers (
     end
 
     /* escrita sincrona */
-    always @(posedge clk ) begin
+    always @(posedge clk, regWrite, writeRegister, writeData,     register0,
+    register1,
+    register2,
+    register3,
+    register4,
+    register5,
+    register6,
+    register7,
+    register8,
+    register9,
+    register10,
+    register11,
+    register12,
+    register13,
+    register14,
+    register15,
+    register16,
+    register17,
+    register18,
+    register19,
+    register20,
+    register21,
+    register22,
+    register23,
+    register24,
+    register25,
+    register26,
+    register27,
+    register28,
+    register29,
+    register30,
+    register31) begin
         if (regWrite == 1'b1) begin
            case (writeRegister)
             5'h0 : register0  = writeData;

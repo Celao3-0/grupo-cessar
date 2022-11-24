@@ -1,0 +1,53 @@
+# vsim -c work.testbench 
+# Start time: 14:51:10 on Nov 24,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: Registers_TB.v(12): (vopt-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 8, found 7.
+# ** Warning: Registers_TB.v(12): (vopt-2718) [TFMPC] - Missing connection for port 'writeData'.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register1' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register2' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register3' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register4' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register5' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register6' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register7' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register8' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register9' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register10' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register11' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register12' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register13' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register14' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register15' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register16' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register17' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register18' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register19' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register20' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register21' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register22' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register23' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register24' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register25' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register26' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register27' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register28' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register29' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register30' within the always block cannot trigger the same always block.
+# ** Warning: Registers.v(123): (vopt-13162) Assignment to 'register31' within the always block cannot trigger the same always block.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=33.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.testbench(fast)
+#  Test ended ,  0 errors 

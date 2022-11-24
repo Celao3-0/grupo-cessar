@@ -1,6 +1,12 @@
 m255
 K4
 z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
@@ -8,27 +14,59 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/berta/Documents/grupo-cessar/Registers
+Z1 dC:/Users/berta/Documents/grupo-cessar/Registers
+T_opt
+!s110 1669312270
+VYkg:JYXI4Yk712L6:Dboc2
+04 9 4 work testbench fast 0
+=1-706979a77794-637faf0e-1bf-2258
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
 vRegisters
-!s110 1669311080
+!s110 1669312264
 !i10b 1
-!s100 Ioh7GNJiWId`WC1zQU=L71
-IDKGW^9=eXg@l;CinneSDT3
-R0
-w1669311076
+!s100 jX];F3BJhdL?_8@0>JAce2
+IjaZ[49PWfkKkR_`fYVZQc3
+R1
+w1669312257
 8Registers.v
 FRegisters.v
-!i122 0
-L0 1 163
-VDg1SIo80bB@j0V0VzS_@n1
-OL;L;2021.2;73
+!i122 8
+L0 1 194
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
 r1
 !s85 0
 31
-!s108 1669311079.000000
+!s108 1669312263.000000
 !s107 Registers.v|
 !s90 Registers.v|
 !i113 0
-o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-tCvgOpt 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
 n@registers
+vtestbench
+!s110 1669312266
+!i10b 1
+!s100 lPR2D^iCZTE9Ong32G[KB3
+I9k:Bhk2dmgZkcITOd]E1P0
+R1
+w1669312100
+8Registers_TB.v
+FRegisters_TB.v
+!i122 9
+L0 2 49
+R3
+R4
+r1
+!s85 0
+31
+!s108 1669312266.000000
+!s107 Registers_TB.v|
+!s90 Registers_TB.v|
+!i113 0
+R5
+R2
