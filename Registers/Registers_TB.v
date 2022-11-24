@@ -27,13 +27,18 @@ module testbench () ;
 
 
         initial begin
+        /* nao deixa nenhum registrador ser escrito */
         regWrite = 1'b0;
 
+        /* testa a leitura dos dois primeiros registradores
+           O registrador 0x0 e inicializado em 32'd0 e o 0x1
+           nao e inicializado */
         readRegister1 = 5'd0;
         readRegister2 = 5'd1;
         #11
         Check(32'd0, 32'dx);
 
+        /* escreve nos dois primeiros registradores */
         regWrite = 1'b1;
         writeRegister = 5'd0;
         writeData = 32'd1;
@@ -42,6 +47,9 @@ module testbench () ;
         writeRegister = 5'd1;
         writeData = 32'd1;
         #11
+        /* verifica se a escrita foi um sucesso
+           testando os dois primeiros registradores,
+           infere-se que o restante esta correto */
         regWrite = 1'b0;
         Check(32'd1, 32'd1);
 
