@@ -13,9 +13,9 @@ module immediateG_tb();
         $display("CASO DEFAULT");
         $display("Immediate = %b\n", immediate_tb);
         if(immediate_tb == 12'b000000000000)
-        $display("Ta OK\n");
+            $display("OK\n"); 
         else
-        $display("Nao Ta OK");
+            $display("Erro");
         #20
 
         //BEQ
