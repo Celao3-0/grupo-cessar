@@ -3,7 +3,7 @@
 module immediateG_tb();
     reg [31:0]instruction_tb;
     wire [11:0] immediate_tb;
-    immediateG uut (instruction(instruction_tb),immediate(immediate_tb));
+    immediateG uut (.instruction(instruction_tb),.immediate(immediate_tb));
 
     initial begin
        
