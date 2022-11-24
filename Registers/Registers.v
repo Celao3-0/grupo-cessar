@@ -1,4 +1,4 @@
-module Registers (
+module PC (
     input wire [4:0] readRegister1,
     input wire [4:0] readRegister2,
     input wire [4:0] writeRegister,
@@ -49,73 +49,73 @@ module Registers (
     /* leitura assincrona */
     always @(*) begin
         case (readRegister1)
-            4'h0 : register0;
-            4'h1 : register1;
-            4'h2 : register2;
-            4'h3 : register3;
-            4'h4 : register4;
-            4'h5 : register5;
-            4'h6 : register6;
-            4'h7 : register7;
-            4'h8 : register8;
-            4'h9 : register9;
-            4'hA : register10;
-            4'hB : register11;
-            4'hC : register12;
-            4'hD : register13;
-            4'hE : register14;
-            4'hF : register15;
-            4'h10: register16;
-            4'h11: register17;
-            4'h12: register18;
-            4'h13: register19;
-            4'h14: register20;
-            4'h15: register21;
-            4'h16: register22;
-            4'h17: register23;
-            4'h18: register24;
-            4'h19: register25;
-            4'h1A: register26;
-            4'h1B: register27;
-            4'h1C: register28;
-            4'h1D: register29;
-            4'h1E: register30;
-            4'h1F: register31;
+            5'b0 : register0;
+            5'h1 : register1;
+            5'h2 : register2;
+            5'h3 : register3;
+            5'h4 : register4;
+            5'h5 : register5;
+            5'h6 : register6;
+            5'h7 : register7;
+            5'h8 : register8;
+            5'h9 : register9;
+            5'hA : register10;
+            5'hB : register11;
+            5'hC : register12;
+            5'hD : register13;
+            5'hE : register14;
+            5'hF : register15;
+            5'h10: register16;
+            5'h11: register17;
+            5'h12: register18;
+            5'h13: register19;
+            5'h14: register20;
+            5'h15: register21;
+            5'h16: register22;
+            5'h17: register23;
+            5'h18: register24;
+            5'h19: register25;
+            5'h1A: register26;
+            5'h1B: register27;
+            5'h1C: register28;
+            5'h1D: register29;
+            5'h1E: register30;
+            5'h1F: register31;
         endcase
 
         case (readRegister2)
-            4'h0 : readData2 = register0;
-            4'h1 : readData2 = register1;
-            4'h2 : readData2 = register2;
-            4'h3 : readData2 = register3;
-            4'h4 : readData2 = register4;
-            4'h5 : readData2 = register5;
-            4'h6 : readData2 = register6;
-            4'h7 : readData2 = register7;
-            4'h8 : readData2 = register8;
-            4'h9 : readData2 = register9;
-            4'hA : readData2 = register10;
-            4'hB : readData2 = register11;
-            4'hC : readData2 = register12;
-            4'hD : readData2 = register13;
-            4'hE : readData2 = register14;
-            4'hF : readData2 = register15;
-            4'h10: readData2 = register16;
-            4'h11: readData2 = register17;
-            4'h12: readData2 = register18;
-            4'h13: readData2 = register19;
-            4'h14: readData2 = register20;
-            4'h15: readData2 = register21;
-            4'h16: readData2 = register22;
-            4'h17: readData2 = register23;
-            4'h18: readData2 = register24;
-            4'h19: readData2 = register25;
-            4'h1A: readData2 = register26;
-            4'h1B: readData2 = register27;
-            4'h1C: readData2 = register28;
-            4'h1D: readData2 = register29;
-            4'h1E: readData2 = register30;
-            4'h1F: readData2 = register31;
+            5'h0 : readData2 = register0;
+            5'h1 : readData2 = register1;
+            5'h2 : readData2 = register2;
+            5'h3 : readData2 = register3;
+            5'h4 : readData2 = register4;
+            5'h5 : readData2 = register5;
+            5'h6 : readData2 = register6;
+            5'h7 : readData2 = register7;
+            5'h8 : readData2 = register8;
+            5'h9 : readData2 = register9;
+            5'hA : readData2 = register10;
+            5'hB : readData2 = register11;
+            5'hC : readData2 = register12;
+            5'hD : readData2 = register13;
+            5'hE : readData2 = register14;
+            5'hF : readData2 = register15;
+            5'h10: readData2 = register16;
+            5'h11: readData2 = register17;
+            5'h12: readData2 = register18;
+            5'h13: readData2 = register19;
+            5'h14: readData2 = register20;
+            5'h15: readData2 = register21;
+            5'h16: readData2 = register22;
+            5'h17: readData2 = register23;
+            5'h18: readData2 = register24;
+            5'h19: readData2 = register25;
+            5'h1A: readData2 = register26;
+            5'h1B: readData2 = register27;
+            5'h1C: readData2 = register28;
+            5'h1D: readData2 = register29;
+            5'h1E: readData2 = register30;
+            5'h1F: readData2 = register31;
         endcase
     end
 
@@ -123,38 +123,38 @@ module Registers (
     always @(posedge clk ) begin
         if (regWrite == 1'b1) begin
            case (writeRegister)
-            4'h0 : register0  = writeData;
-            4'h1 : register1  = writeData;
-            4'h2 : register2  = writeData;
-            4'h3 : register3  = writeData;
-            4'h4 : register4  = writeData;
-            4'h5 : register5  = writeData;
-            4'h6 : register6  = writeData;
-            4'h7 : register7  = writeData;
-            4'h8 : register8  = writeData;
-            4'h9 : register9  = writeData;
-            4'hA : register10 = writeData;
-            4'hB : register11 = writeData;
-            4'hC : register12 = writeData;
-            4'hD : register13 = writeData;
-            4'hE : register14 = writeData;
-            4'hF : register15 = writeData;
-            4'h10: register16 = writeData;
-            4'h11: register17 = writeData;
-            4'h12: register18 = writeData;
-            4'h13: register19 = writeData;
-            4'h14: register20 = writeData;
-            4'h15: register21 = writeData;
-            4'h16: register22 = writeData;
-            4'h17: register23 = writeData;
-            4'h18: register24 = writeData;
-            4'h19: register25 = writeData;
-            4'h1A: register26 = writeData;
-            4'h1B: register27 = writeData;
-            4'h1C: register28 = writeData;
-            4'h1D: register29 = writeData;
-            4'h1E: register30 = writeData;
-            4'h1F: register31 = writeData;
+            5'h0 : register0  = writeData;
+            5'h1 : register1  = writeData;
+            5'h2 : register2  = writeData;
+            5'h3 : register3  = writeData;
+            5'h4 : register4  = writeData;
+            5'h5 : register5  = writeData;
+            5'h6 : register6  = writeData;
+            5'h7 : register7  = writeData;
+            5'h8 : register8  = writeData;
+            5'h9 : register9  = writeData;
+            5'hA : register10 = writeData;
+            5'hB : register11 = writeData;
+            5'hC : register12 = writeData;
+            5'hD : register13 = writeData;
+            5'hE : register14 = writeData;
+            5'hF : register15 = writeData;
+            5'h10: register16 = writeData;
+            5'h11: register17 = writeData;
+            5'h12: register18 = writeData;
+            5'h13: register19 = writeData;
+            5'h14: register20 = writeData;
+            5'h15: register21 = writeData;
+            5'h16: register22 = writeData;
+            5'h17: register23 = writeData;
+            5'h18: register24 = writeData;
+            5'h19: register25 = writeData;
+            5'h1A: register26 = writeData;
+            5'h1B: register27 = writeData;
+            5'h1C: register28 = writeData;
+            5'h1D: register29 = writeData;
+            5'h1E: register30 = writeData;
+            5'h1F: register31 = writeData;
            endcase 
         end
     end

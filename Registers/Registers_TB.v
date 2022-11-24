@@ -9,9 +9,9 @@ module testbench () ;
     wire [31:0] readData1;
     wire [31:0] readData2;
 
-    Registers UUT (.D(D), .clock(clock), .reset(reset), .Q(Q), .Qbar(Qbar));
+    Registers UUT (.readRegister1(readRegister1), .readRegister2(readRegister2), .writeRegister(writeRegister), .regWrite(regWrite), .clk(clk), .readData1(readData1), .readData2(readData2));
 
-    integer i, k, errors;
+    integer i, errors;
     task Check ;
         input xpect;
         if (Q != xpect) begin
