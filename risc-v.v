@@ -1,6 +1,6 @@
 module riscv (
     input wire semente,
-    input wire clock
+    input wire clk
 );
 
     

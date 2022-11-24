@@ -1,0 +1,76 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/berta/Documents/grupo-cessar/InstructionMemory
+T_opt
+!s110 1669274342
+V>hmU66?^OFZ`2KjKnNUZ80
+04 9 4 work testbench fast 0
+=1-706979a77794-637f1ae6-1a0-3f90
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vInstructionMemory
+!s110 1669274252
+!i10b 1
+!s100 ZSGADoJ2;>S0Vb]YA1<la0
+I[lfo7744YWe1bY`AXe0>I3
+R1
+w1669274013
+8InstructionMemory.v
+FInstructionMemory.v
+!i122 15
+L0 1 24
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1669274252.000000
+!s107 InstructionMemory.v|
+!s90 InstructionMemory.v|
+!i113 0
+Z5 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@instruction@memory
+vtestbench
+!s110 1669274339
+!i10b 1
+!s100 42Z]F<BTUVIECl@z54^;Q3
+IWc`_o0B4da4aN9FNl6=Vc0
+R1
+w1669274334
+8instructionMemory_TB.v
+FinstructionMemory_TB.v
+!i122 18
+L0 3 41
+R3
+R4
+r1
+!s85 0
+31
+!s108 1669274339.000000
+!s107 instructionMemory_TB.v|
+!s90 instructionMemory_TB.v|
+!i113 0
+R5
+R2

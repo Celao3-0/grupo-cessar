@@ -1,8 +1,8 @@
-module ClockGen (CLK);
-    output reg CLK;
+module ClockGen (clk);
+    output reg clk;
 
-    initial CLK = 0;
+    initial clk = 0;
 
     always 
-        #50 CLK = ~CLK;
+        #50 clk = ~clk;
 endmodule
