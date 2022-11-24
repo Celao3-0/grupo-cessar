@@ -120,7 +120,8 @@ module Registers (
     end
 
     /* escrita sincrona */
-    always @(posedge clk, regWrite, writeRegister, writeData,     register0,
+    always @(posedge clk, regWrite, writeRegister, writeData,
+    register0,
     register1,
     register2,
     register3,

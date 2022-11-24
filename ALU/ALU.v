@@ -51,7 +51,7 @@ module ALU (
     wire [3:0] and31;
 
 
-    sum adder (.A(A), .B(B), .result(resAdd), .Cout(overflowAdd));
+    sumALU adder (.A(A), .B(B), .result(resAdd), .Cout(overflowAdd));
     sub subtract (.A(A), .B(B), .result(resSub), .Cout(overflowSub));
     andModule andmod (.A(A), .B(B), .result(resAnd));
     orModule ormod (.A(A), .B(B), .result(resOr));

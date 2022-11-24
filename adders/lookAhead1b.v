@@ -1,4 +1,4 @@
-module lookAhead1bALU (
+module lookAhead1b (
     input A,
     input B,
     input C,

@@ -1,10 +1,443 @@
 m255
 K4
 z2
+!s11f vlog 2021.2 2021.04, Apr 14 2021
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-dC:/Users/berta/Documents/grupo-cessar
+Z0 dC:/Users/berta/Documents/grupo-cessar
+vALU
+Z1 !s110 1669330442
+!i10b 1
+!s100 G4QEP4zgdHRb[N;5QEFOz0
+I5S[J;]OQ3W@1_R_jI<aUe2
+R0
+w1669330333
+8./ALU/ALU.v
+F./ALU/ALU.v
+!i122 7
+L0 6 283
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z4 !s108 1669330442.000000
+!s107 ./adders/lookahead1b.v|./adders/sum.v|./mux/mux.v|./DataMemory/DataMemory.v|./ALU/./operations/or.v|./ALU/./operations/lookahead1b.v|./ALU/./operations/sum.v|./ALU/./operations/borrowahead1b.v|./ALU/./operations/sub.v|./ALU/./operations/and.v|./ALU/ALU.v|./ALU_Control/ALU_Control_structural.v|./ImmediateGenerator/immediateG.v|./Registers/Registers.v|./Control-Monocycle/Control.v|./Registers/PC.v|./InstructionMemory/InstructionMemory.v|./ClockGenerator/clock_gen.v|risc-v.v|
+Z5 !s90 risc-v.v|
+!i113 0
+Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 tCvgOpt 0
+n@a@l@u
+vALU_Control
+R1
+!i10b 1
+!s100 9k8nMgJ;Lm=5ME9IM[c_[0
+IL4gGc=[ZPk9<g1W5O0KF02
+R0
+w1668373022
+8./ALU_Control/ALU_Control_structural.v
+F./ALU_Control/ALU_Control_structural.v
+!i122 7
+L0 1 11
+R2
+R3
+r1
+!s85 0
+31
+R4
+Z8 !s107 ./adders/lookahead1b.v|./adders/sum.v|./mux/mux.v|./DataMemory/DataMemory.v|./ALU/./operations/or.v|./ALU/./operations/lookahead1b.v|./ALU/./operations/sum.v|./ALU/./operations/borrowahead1b.v|./ALU/./operations/sub.v|./ALU/./operations/and.v|./ALU/ALU.v|./ALU_Control/ALU_Control_structural.v|./ImmediateGenerator/immediateG.v|./Registers/Registers.v|./Control-Monocycle/Control.v|./Registers/PC.v|./InstructionMemory/InstructionMemory.v|./ClockGenerator/clock_gen.v|risc-v.v|
+R5
+!i113 0
+R6
+R7
+n@a@l@u_@control
+vandModule
+R1
+!i10b 1
+!s100 Z<`m_nd[QeR<8doKo7M1I0
+I<g12P8<OLh6Y4TVc4YR:43
+R0
+w1668376559
+8./ALU/./operations/and.v
+F./ALU/./operations/and.v
+!i122 7
+Z9 L0 1 39
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nand@module
+vborrowAhead1b
+R1
+!i10b 1
+!s100 bO43nZYO`:iz:h=7m1KSb2
+IoJ_5I5?Ph<:zmZ=N?[JR_1
+R0
+w1668320060
+8./ALU/./operations/borrowahead1b.v
+F./ALU/./operations/borrowahead1b.v
+!i122 7
+L0 1 19
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nborrow@ahead1b
+vClockGen
+R1
+!i10b 1
+!s100 N]SYD3jj[DW_RPIZTnmmQ1
+IdLY48dP9k3d7bnazM`fOS1
+R0
+w1669308486
+8./ClockGenerator/clock_gen.v
+F./ClockGenerator/clock_gen.v
+!i122 7
+L0 1 8
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+n@clock@gen
+vControlUnit
+R1
+!i10b 1
+!s100 JY60KBi9MSf2l[z]zLS4@2
+IIzzAkITbH2ldVUzSbbE^C1
+R0
+w1668300631
+8./Control-Monocycle/Control.v
+F./Control-Monocycle/Control.v
+!i122 7
+L0 3 37
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+n@control@unit
+vdata_memory
+R1
+!i10b 1
+!s100 4nQ2W]9M<5h1hHL<gY2^I1
+I5dEJYGQB?1KmSj;FM[WO]0
+R0
+w1669273014
+8./DataMemory/DataMemory.v
+F./DataMemory/DataMemory.v
+!i122 7
+L0 1 41
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+vimmediateG
+R1
+!i10b 1
+!s100 CH@H00c1eV_E_B7C0FB6m2
+ISX07oPZ9A?c8NF;[BV:fC3
+R0
+w1669310511
+8./ImmediateGenerator/immediateG.v
+F./ImmediateGenerator/immediateG.v
+!i122 7
+L0 1 20
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nimmediate@g
+vInstructionMemory
+R1
+!i10b 1
+!s100 ZSGADoJ2;>S0Vb]YA1<la0
+IE4<jH`4abISAWz]<FN5U10
+R0
+w1669274013
+8./InstructionMemory/InstructionMemory.v
+F./InstructionMemory/InstructionMemory.v
+!i122 7
+L0 1 24
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+n@instruction@memory
+vlookAhead1b
+R1
+!i10b 1
+!s100 ?[d=jKYl3A5O@<L@K`bh42
+IO@mL>Mg4GVhIb_oh>CgkM3
+R0
+w1668378912
+8./adders/lookahead1b.v
+F./adders/lookahead1b.v
+!i122 7
+Z10 L0 1 21
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nlook@ahead1b
+vlookAhead1bALU
+R1
+!i10b 1
+!s100 ;hRLC<hI0mBWIIdjL>IoS2
+IGjonORCX`]1f`J32CE0XB0
+R0
+w1669330340
+8./ALU/./operations/lookahead1b.v
+F./ALU/./operations/lookahead1b.v
+!i122 7
+R10
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nlook@ahead1b@a@l@u
+vmux
+R1
+!i10b 1
+!s100 SfVModM1hfB`?XAHQ=iIa3
+Ie48mN;NkVLRIc_9POl^]M1
+R0
+w1669326759
+8./mux/mux.v
+F./mux/mux.v
+!i122 7
+Z11 L0 1 14
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+vorModule
+R1
+!i10b 1
+!s100 CE>oFe:=:9h9[OEB0BUF72
+I5z;?Tk@WWUoSLB>=K<iYl0
+R0
+w1668376583
+8./ALU/./operations/or.v
+F./ALU/./operations/or.v
+!i122 7
+R9
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nor@module
+vPC
+R1
+!i10b 1
+!s100 gZO8^@@n^5GJ]8Q3ZmF^O3
+I974RN23]THkfUOJFz^=U=0
+R0
+w1669317336
+8./Registers/PC.v
+F./Registers/PC.v
+!i122 7
+R11
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+n@p@c
+vRegisters
+R1
+!i10b 1
+!s100 FO3Y]E9Y1KAcjD]W3^4<;1
+I23k`[YVk[??;o5^FW7CUo1
+R0
+w1669319790
+8./Registers/Registers.v
+F./Registers/Registers.v
+!i122 7
+L0 1 195
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+n@registers
+vriscv
+R1
+!i10b 1
+!s100 h=5gH>SkfI`c9aTDGDmeo0
+IAoH5=:3iZc6c]IRkRh;dQ0
+R0
+w1669330376
+8risc-v.v
+Frisc-v.v
+!i122 7
+L0 13 111
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+vsub
+R1
+!i10b 1
+!s100 H15>KgCgGT4AR;8flfYUg2
+I8PHhE23QzHGeC7]LZeLnV3
+R0
+w1668376768
+8./ALU/./operations/sub.v
+F./ALU/./operations/sub.v
+!i122 7
+L0 3 74
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+vsum
+R1
+!i10b 1
+!s100 gGBZS7D9_a9m0OCn6^Ofl0
+IS3G^ATj^`gc^_LB`769I92
+R0
+w1669329973
+8./adders/sum.v
+F./adders/sum.v
+!i122 7
+Z12 L0 3 75
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+vsumALU
+R1
+!i10b 1
+!s100 7kOdELYl2>dg`NZmLfHkj3
+I?jCe@^VenZ@SQcO:Ie>Uc2
+R0
+w1669330441
+8./ALU/./operations/sum.v
+F./ALU/./operations/sum.v
+!i122 7
+R12
+R2
+R3
+r1
+!s85 0
+31
+R4
+R8
+R5
+!i113 0
+R6
+R7
+nsum@a@l@u

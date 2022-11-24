@@ -1,4 +1,4 @@
-module  PC(datain, dataout, enable, reset, clk);
+module PC(datain, dataout, enable, reset, clk);
     input [31:0] datain;       /*dados de entrada*/
     input clk, enable, reset;  /*sinais de controle*/
     output reg [31:0] dataout; /*dados de saida*/
