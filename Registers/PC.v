@@ -1,4 +1,4 @@
-module Register_32_bits(datain, dataout, contro, reset, clk);
+module  PC(datain, dataout, contro, reset, clk);
     input [31:0] datain;
     input clk, contro, reset;
     output reg [31:0] dataout;

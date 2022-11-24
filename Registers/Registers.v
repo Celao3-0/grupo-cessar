@@ -1,4 +1,4 @@
-module PC (
+module Registers (
     input wire [4:0] readRegister1,
     input wire [4:0] readRegister2,
     input wire [4:0] writeRegister,
@@ -49,38 +49,38 @@ module PC (
     /* leitura assincrona */
     always @(*) begin
         case (readRegister1)
-            5'b0 : register0;
-            5'h1 : register1;
-            5'h2 : register2;
-            5'h3 : register3;
-            5'h4 : register4;
-            5'h5 : register5;
-            5'h6 : register6;
-            5'h7 : register7;
-            5'h8 : register8;
-            5'h9 : register9;
-            5'hA : register10;
-            5'hB : register11;
-            5'hC : register12;
-            5'hD : register13;
-            5'hE : register14;
-            5'hF : register15;
-            5'h10: register16;
-            5'h11: register17;
-            5'h12: register18;
-            5'h13: register19;
-            5'h14: register20;
-            5'h15: register21;
-            5'h16: register22;
-            5'h17: register23;
-            5'h18: register24;
-            5'h19: register25;
-            5'h1A: register26;
-            5'h1B: register27;
-            5'h1C: register28;
-            5'h1D: register29;
-            5'h1E: register30;
-            5'h1F: register31;
+            5'b0 : readData1 = register0;
+            5'h1 : readData1 = register1;
+            5'h2 : readData1 = register2;
+            5'h3 : readData1 = register3;
+            5'h4 : readData1 = register4;
+            5'h5 : readData1 = register5;
+            5'h6 : readData1 = register6;
+            5'h7 : readData1 = register7;
+            5'h8 : readData1 = register8;
+            5'h9 : readData1 = register9;
+            5'hA : readData1 = register10;
+            5'hB : readData1 = register11;
+            5'hC : readData1 = register12;
+            5'hD : readData1 = register13;
+            5'hE : readData1 = register14;
+            5'hF : readData1 = register15;
+            5'h10: readData1 = register16;
+            5'h11: readData1 = register17;
+            5'h12: readData1 = register18;
+            5'h13: readData1 = register19;
+            5'h14: readData1 = register20;
+            5'h15: readData1 = register21;
+            5'h16: readData1 = register22;
+            5'h17: readData1 = register23;
+            5'h18: readData1 = register24;
+            5'h19: readData1 = register25;
+            5'h1A: readData1 = register26;
+            5'h1B: readData1 = register27;
+            5'h1C: readData1 = register28;
+            5'h1D: readData1 = register29;
+            5'h1E: readData1 = register30;
+            5'h1F: readData1 = register31;
         endcase
 
         case (readRegister2)

@@ -28,26 +28,7 @@ module testbench () ;
         errors = 0;
         reset = 0;
         
-        D = 1'b1;
-        #100
-        Check(1'b1);
-        $display ("Info: D = %b, expect %b, got %b, reset = %b, Qbar = %b", D, D, Q, reset, Qbar);
-
-
-        D = 1'b0;
-        $display ("Info: D = %b, expect %b, got %b, reset = %b, Qbar = %b", D, D, Q, reset, Qbar);
-
-        D = 1'b1;
-        #100
-        Check(1'b1);
-        $display ("Info: D = %b, expect %b, got %b, reset = %b, Qbar = %b", D, D, Q, reset, Qbar);
-
-
-
-        D = 1'b0;
-        #100
-        Check(1'b0);
-        $display ("Info: D = %b, expect %b, got %b, reset = %b, Qbar = %b", D, D, Q, reset, Qbar);
+        
 
 
         $display (" Test ended , %2d errors ", errors );
