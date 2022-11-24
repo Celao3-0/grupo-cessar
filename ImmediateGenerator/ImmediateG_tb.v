@@ -3,7 +3,7 @@
 module immediateG();
     reg [31:0]instruction_tb;
     wire [11:0] immediate_tb;
-    immediateG uut (.instruction(instruction_tb),.immediate(immediate_tb));
+    immediateG uut (instruction(instruction_tb),immediate(immediate_tb));
 
     initial begin
        
@@ -38,7 +38,7 @@ module immediateG();
             $display("Erro");
 
         //SW
-        instruction_tb = 32'01010101111111111111101010100011;
+        instruction_tb = 32'b01010101111111111111101010100011;
         #20
         $display("\nCASO SW");
         $display("Immediate = %b\n", immediate_tb);
