@@ -1,7 +1,8 @@
 module immediateG(instruction, immediate);
-    input [31:0] instruction;
-    output reg [11:0] immediate;
+    input [31:0] instruction; /*Instrucao de 32 bits*/
+    output reg [11:0] immediate; /*Gera um immediate de 12 bits*/    
     always @(*) begin
+        
     case (instruction[6:0])
     //BEQ
     7'b1100011:
