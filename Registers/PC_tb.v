@@ -14,15 +14,15 @@ module testbench();
 	/*valores iniciais*/
         clk_tb = 0;
         reset_tb = 1;
-        contro_tb = 0;
+        enable_tb = 0;
         #50 
         reset_tb = 0;
-        contro_tb = 0;
+        enable_tb = 0;
         datain_tb = sete;
         i = i + 1;
         #10 /*Intervalo de tempo para os bits serem atualizados corretamente*/
         if(dataout_tb == 0) begin
-            $display("TESTE %b CORRETO\nreset = %b\ncontro = %b\n->entrada = %b; saida = %b\n", i, reset_tb, contro_tb, datain_tb, dataout_tb);
+            $display("TESTE %b CORRETO\nreset = %b\nenable = %b\n->entrada = %b; saida = %b\n", i, reset_tb, enable_tb, datain_tb, dataout_tb);
             $display("\n");
         end
         else begin
