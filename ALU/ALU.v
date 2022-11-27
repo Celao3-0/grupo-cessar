@@ -250,7 +250,7 @@ module ALU (
     or (result[30], and30[0], and30[1], and30[2], and30[3]);
     or (result[31], and31[0], and31[1], and31[2], and31[3]);
 
-    or (zero,
+    nor (zero,
     result[0],
     result[1],
     result[2],
